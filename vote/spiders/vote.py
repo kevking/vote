@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from live.items import LiveItem
+from vote.items import VoteItem
 from scrapy.contrib.loader import ItemLoader
 
 
@@ -13,7 +13,7 @@ class voteSpider(scrapy.Spider):
             yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
-        items = ItemLoader(item=LiveItem(),response=response)
+        items = ItemLoader(item=VoteItem(),response=response)
             
 
     

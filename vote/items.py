@@ -8,7 +8,7 @@
 import scrapy
 from scrapy.loader.processors import MapCompose,TakeFirst
 
-class LiveItem(scrapy.Item):
+class VoteItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
 #    title = scrapy.Field(

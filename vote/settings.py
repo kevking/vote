@@ -9,10 +9,10 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'live'
+BOT_NAME = 'vote'
 
-SPIDER_MODULES = ['live.spiders']
-NEWSPIDER_MODULE = 'live.spiders'
+SPIDER_MODULES = ['vote.spiders']
+NEWSPIDER_MODULE = 'vote.spiders'
 LOG_LEVEL = 'INFO'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'live.pipelines.LivePipeline': 300,
+    'vote.pipelines.VotePipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

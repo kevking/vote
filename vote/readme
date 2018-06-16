@@ -10,3 +10,5 @@ HTTPCACHE_IGNORE_HTTP_CODES = []
 HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 FEED_EXPORT_ENCODING = 'utf-8'
 3、修改spider/vote.py文件，将需要爬的网址填入url位置
+4、修改scrapy.cfg
+修改默认配置路径以及项目名称
