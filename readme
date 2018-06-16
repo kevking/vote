@@ -1,0 +1,12 @@
+在完整的空白程序下，需要修改的文件如下：
+1、items.py 
+修改爬虫需要爬取的字段的数据结构，并对其进行基本的处理
+2、settings.py
+添加以下内容，避免爬虫在调试阶段被封
+HTTPCACHE_ENABLED = False
+HTTPCACHE_EXPIRATION_SECS = 0
+HTTPCACHE_DIR = 'httpcache'
+HTTPCACHE_IGNORE_HTTP_CODES = []
+HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+FEED_EXPORT_ENCODING = 'utf-8'
+3、修改spider/vote.py文件，将需要爬的网址填入url位置
